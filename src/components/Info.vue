@@ -7,7 +7,7 @@
     </h1>
     <div class="bio">
       <p style="font-size: 14px;">{{user.bio}}</p>
-      <button class="btn">Edit bio</button>
+      <button class="btn"><strong>Edit bio</strong></button>
     </div>
     <ul class="contact">
       <span class="block"><i class="fa fa-users" aria-hidden="true"></i>{{user.company}}</span>

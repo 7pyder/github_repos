@@ -40,6 +40,22 @@ body {
   max-width: 1024px;
   margin: 0 auto;
 }
+.btn {
+  padding: 8px 12px;
+  border: 1px solid rgba(27,31,35,0.2);
+  white-space: nowrap;
+  color: #24292e;
+  border-radius: 4px;
+  background-color: #eff3f6;
+  background-image: linear-gradient(-180deg, #fafbfc 0%, #eff3f6 90%);
+}
+.btn:focus {
+  background-color: #e9ecef;
+  background-image: none;
+  border-color: rgba(27,31,35,0.35);
+  box-shadow: inset 0 0.15em 0.3em rgba(27,31,35,0.15);
+  outline: none;
+}
 .container {
   padding: 16px;
 }

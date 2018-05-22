@@ -18,11 +18,11 @@ export default {
         const wordMatch = keywords.every((keyword) => totalWords.some((word) => word.toLowerCase() === keyword.toLowerCase()))
         if (!wordMatch) return false
 
-        const languageMatch = (state.query.language) ? (repo.language === state.query.language) : true
+        const languageMatch = (state.query.language == 'All') ? true : (repo.language === state.query.language)
         if (!languageMatch) return false
 
         switch (state.query.type) {
-          case '':
+          case 'All':
             return true
           case 'Sources':
             return repo.fork === false
